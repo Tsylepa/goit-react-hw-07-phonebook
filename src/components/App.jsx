@@ -2,9 +2,8 @@ import ContactForm from './ContactForm';
 import ContactList from './ContactList/ContactList';
 import { Wrapper } from './App.styled';
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { fetchContacts } from 'redux/operations';
-import { getError } from 'redux/selectors';
 
 const App = () => {
   const dispatch = useDispatch();
