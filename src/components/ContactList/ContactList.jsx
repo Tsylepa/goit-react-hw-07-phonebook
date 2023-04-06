@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { removeContact } from 'redux/operations';
+import { deleteContact } from 'redux/operations';
 import { BeatLoader } from 'react-spinners';
 import { getIsLoading, getError } from 'redux/selectors';
 import { BiError } from 'react-icons/bi';
@@ -53,7 +53,7 @@ const ContactList = () => {
                     <td>
                       <Delete
                         type="button"
-                        onClick={() => dispatch(removeContact(id))}
+                        onClick={() => dispatch(deleteContact(id))}
                       >
                         Delete
                       </Delete>
