@@ -8,7 +8,6 @@ import { getError } from 'redux/selectors';
 
 const App = () => {
   const dispatch = useDispatch();
-  const error = useSelector(getError);
 
   useEffect(() => {
     dispatch(fetchContacts());
